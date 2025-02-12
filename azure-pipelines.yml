@@ -1,5 +1,5 @@
 pool:
-  name: 'PoolAjent'
+  name: 'SwapnaAjent'
 
 stages:
 - stage: Deploy
@@ -12,8 +12,8 @@ stages:
         connectionType: 'Kubernetes Service Connection'
         #azureSubscription: 'kubernetees'
         kubernetesServiceEndpoint: 'kubernetees'
-        azureResourceGroup: 'dev-env'
-        kubernetesCluster: 'dev-cluster'
+        azureResourceGroup: 'dev'
+        kubernetesCluster: 'dev-env'
         namespace: 'three-tier'
         command: 'apply'
         arguments: '-f DB/database.yml'
