@@ -14,7 +14,7 @@ stages:
         kubernetesServiceEndpoint: 'kubernetees'
         azureResourceGroup: 'test'
         kubernetesCluster: 'dev-cluster'
-        namespace: 'three-tier'
+        namespace: 'three-tire'
         command: 'apply'
         arguments: '-f DB/database.yml'
       displayName: 'Deploy MongoDB to Kubernetes'
